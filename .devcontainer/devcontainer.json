@@ -1,0 +1,26 @@
+{
+  "name": "ambient-dev",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  // user.env、project.envを作成後コメントアウト解除
+  // "runArgs": ["--env-file", "user.env", "--env-file", "project.env"],
+  "features": {
+    // root feature
+    "ghcr.io/devcontainers/features/aws-cli": {},
+    "ghcr.io/devcontainers/features/github-cli": {},
+    "ghcr.io/eitsupi/devcontainer-features/jq-likes": {},
+    "ghcr.io/devcontainers/features/python": {
+      "version": 3.9
+    },
+    "./features/root": {}
+  },
+  "postCreateCommand": "find /workspace/.devcontainer/features -name 'post-create-command.sh' -exec bash {} \\;",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": []
+    }
+  },
+  "remoteUser": "vscode"
+}

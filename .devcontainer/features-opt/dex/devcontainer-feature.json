@@ -1,0 +1,12 @@
+{
+  "name": "ambient-lab dex",
+  "id": "dex",
+  "version": "0",
+  "description": "ambient-lab dex feature",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": []
+    }
+  }
+}

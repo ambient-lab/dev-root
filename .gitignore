@@ -341,3 +341,4 @@ cython_debug/
 .env.production.local
 .env.local
 user.env
+project.env

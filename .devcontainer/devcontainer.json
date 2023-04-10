@@ -3,8 +3,6 @@
   "image": "mcr.microsoft.com/devcontainers/base:bullseye",
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-  // user.env、project.envを作成後コメントアウト解除
-  // "runArgs": ["--env-file", "user.env", "--env-file", "project.env"],
   "features": {
     // root feature
     "ghcr.io/devcontainers/features/aws-cli": {},

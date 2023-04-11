@@ -69,7 +69,8 @@
         "mutantdino.resourcemonitor",
         "shd101wyy.markdown-preview-enhanced",
         "mikestead.dotenv",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "github.copilot"
       ]
     }
   }
